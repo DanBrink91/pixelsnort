@@ -48,11 +48,7 @@ function obj_list(flat_array) {
 function unwrap(data) {
   var unwrapped_list = [];
   var len = data.length;
-  unwrapped_list.push(255);
-  unwrapped_list.push(0);
-  unwrapped_list.push(0);
-  unwrapped_list.push(255);
-  for(var i = 1; i < len; i++) {
+  for(var i = 0; i < len; i++) {
     unwrapped_list.push(data[i].r);
     unwrapped_list.push(data[i].g);
     unwrapped_list.push(data[i].b);
